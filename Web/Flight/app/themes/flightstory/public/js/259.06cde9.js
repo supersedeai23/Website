@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_roots_bud_sage_burn_wordpress=self.webpackChunk_roots_bud_sage_burn_wordpress||[]).push([[259],{"../node_modules/@roots/sage/lib/client/dom-ready.js":(e,s)=>{s.Z=e=>{window.requestAnimationFrame((async function s(){document.body?await e():window.requestAnimationFrame(s)}))}}}]);
