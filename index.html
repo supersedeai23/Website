@@ -1,46 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>Supersede</title>
 </head>
+
 <body>
     <header>
         <nav>
+            <div class="navbar-nav">
+                <div class="logo-container">
+                    <a href="#" id="logo-text">Supersede</a>
+                </div>
 
+                <div>
+                    <button id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="navbar-menu">
+                        <ul>
+                            <li class="nav-item"><a href="#">Benefits</a> <span>|&nbsp;</span></li>
+                            <li class="nav-item"><a href="#">Services</a> <span>|&nbsp;</span></li>
+                            <li class="nav-item"><a href="#">Case Studies and Testimonials</a> <span>|&nbsp;</span></li>
+                            <li class="nav-item"><a href="#">Blog</a></li>
+                            <li id="book-call-btn-li"><a href="#" type="button" id="book-call-btn">Book a Call</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    
+
     <!-- Hero Section -->
     <section>
-
+        <div id="hero-container">
+            <div class="intro-text">
+                <div class="intro-title">
+                    <h2 id=""><span style="color: aqua;">the</span>FUTURE</h2>
+                </div>
+                <div class="intro-statement">
+                    <h1>KICK START YOUR AI JOURNEY</h1>
+                </div>
+            </div>
+            <div class="intro-animation">
+                <video autoplay muted loop id="background-video">
+                    <source src="static/videos/demo_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </section>
 
     <!-- Partners Section -->
-    <section>
-
+    <section class="partners-section">
+        <div class="partners-container">
+            <div class="partners-marquee">
+                <div class="partner-container">Partner 1</div>
+                <div class="partner-container">Partner 11</div>
+                <div class="partner-container">Partner 111</div>
+                <div class="partner-container">Partner 1111</div>
+            </div>
+        </div>
     </section>
 
     <!-- AI Section -->
-    <section>
-
+    <section class="ai-section">
+        <div class="ai-container">
+            <div class="ai-title">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, quo!</h1>
+            </div>
+            <div class="ai-text">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="ai-cards">
+                <div class="ai-card">
+                    <div class="ai-card-pic">
+                        <img src="./static/images/ai-card-1.png" alt="Icon">
+                    </div>
+                    <div class="ai-card-title">
+                        Lorem ipsum dolor.
+                    </div>
+                    <div class="ai-card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-card-pic">
+                        <img src="./static/images/ai-card-1.png" alt="Icon">
+                    </div>
+                    <div class="ai-card-title">
+                        Lorem ipsum dolor.
+                    </div>
+                    <div class="ai-card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-card-pic">
+                        <img src="./static/images/ai-card-1.png" alt="Icon">
+                    </div>
+                    <div class="ai-card-title">
+                        Lorem ipsum dolor.
+                    </div>
+                    <div class="ai-card-text">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </div>
+                </div>
+            </div>
+            <div class="ai-btn">
+                <a href="#" type="btn">Learn More</a>
+            </div>
+        </div>
     </section>
 
     <!-- Services Section -->
     <section>
-
+        <div class="services-container">
+            <div class="service-cards">
+                <div class="service-card">
+                    <div class="service-card-pic">
+                        <img src="./static/images/service-card-1.png" alt="Icon">
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <div class="service-card-text">
+                        <a href="#" type="button">Browse More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-pic">
+                        <img src="./static/images/service-card-1.png" alt="Icon">
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <div class="service-card-text">
+                        <a href="#" type="button">Browse More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-pic">
+                        <img src="./static/images/service-card-1.png" alt="Icon">
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <div class="service-card-text">
+                        <a href="#" type="button">Browse More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-pic">
+                        <img src="./static/images/service-card-1.png" alt="Icon">
+                        <span>Lorem ipsum</span>
+                    </div>
+                    <div class="service-card-text">
+                        <a href="#" type="button">Browse More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-text">
+                <div class="services-text-title">
+                    <h2>Service Title Here</h2>
+                </div>
+                <div class="services-text-paragraphs">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, dolore? Corporis reprehenderit
+                        labore voluptas dolorum esse incidunt aperiam! Deleniti, aut.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, optio.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, suscipit. A, ipsum omnis saepe
+                        praesentium similique iste fuga incidunt voluptatum tempore quas expedita quod ipsa magnam optio
+                        sunt nisi cum explicabo dolor error consequatur tenetur voluptate modi commodi accusamus. Animi
+                        repudiandae exercitationem temporibus veritatis quidem.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Metrics Section -->
     <section>
-
+        <div class="metrics-container">
+            <h2 id="metrics-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
+            <div class="metric-card">
+                <div class="metric-card-icon">
+                    <img src="./static/images/metric-card-1.png" alt="Icon">
+                </div>
+                <div class="metric-card-title">
+                    Lorem, ipsum.
+                </div>
+                <div class="metric-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, vel!
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-card-icon">
+                    <img src="./static/images/metric-card-1.png" alt="Icon">
+                </div>
+                <div class="metric-card-title">
+                    Lorem, ipsum.
+                </div>
+                <div class="metric-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, vel!
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-card-icon">
+                    <img src="./static/images/metric-card-1.png" alt="Icon">
+                </div>
+                <div class="metric-card-title">
+                    Lorem, ipsum.
+                </div>
+                <div class="metric-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, vel!
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-card-icon">
+                    <img src="./static/images/metric-card-1.png" alt="Icon">
+                </div>
+                <div class="metric-card-title">
+                    Lorem, ipsum.
+                </div>
+                <div class="metric-card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, vel!
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
+        <div class="final-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus ab ut repudiandae suscipit
+                qui tenetur nulla, eaque aspernatur architecto.</p>
+        </div>
 
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="fistname">Please Let's know your name</label> <br>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Please Let's know your name</label> <br>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Please enter your email</label> <br>
+                <input type="email" name="email" id="email" placeholder="...@...">
+            </div>
+            <div class="form-group">
+                <label for="budget">Please enter your budget</label> <br>
+                <input type="number" name="budget" id="budget" placeholder="budget">
+            </div>
+            <div class="form-end">
+                <div class="more-info">
+                    <label for="more_info">Please tell us more about your projects (optional)</label> <br>
+                    <textarea name="more_info" id="more_info-text" cols="35" rows="7"></textarea> <br>
+                </div>
+                <div class="submit-container">
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+        <div class="copyright">
+            &copy; Supersede 2023. All rights Reserved
+        </div>
     </footer>
 </body>
 <script src="./static/js/script.js"></script>
+
 </html>
