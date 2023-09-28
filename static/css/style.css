@@ -2,6 +2,10 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -14,6 +18,19 @@ ul {
 a {
     text-decoration: none;
 }
+
+.my-btn {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
 
 /* NavBar */
 nav {
@@ -46,43 +63,57 @@ nav {
     cursor: pointer;
 }
 
-
-.navbar-toggler-icon {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    display: block;
-    position: relative;
-    margin-bottom: 0.2em;
-    transition: background-color 0.3s ease;
-}
-
 #navbar-menu ul {
     display: flex;
     align-items: center;
 }
 
-#navbar-menu ul li span {
-    font-weight: bolder;
+.nav-item {
+    margin-left: 1.5em;
+}
+
+#book-call-btn-li {
+    border: solid 1.5px blueviolet;
+    border-radius: 4rem;
+    padding: 0.4em 0.8em;
+    margin-left: 1.2em;
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(4, 1, 19);
+    box-shadow: 0 3px 5px rgba(100, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+#book-call-btn-li:hover {
+    background-color: black;
+    border: solid 1.5px rgb(102, 37, 163);
 }
 
 #book-call-btn {
-    border: solid 1.5px;
-    border-radius: 20px;
-    padding: 0.4em 0.8em;
-    margin-left: 1.2em;
+    transition: color 0.3s ease-in-out;
 }
 
 #book-call-btn:hover {
-    background-color: rgb(4, 1, 19);
-    font-size: 1.05em;
-    transition: font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: rgb(172, 141, 202);
 }
 
-#book-call-btn:not(:hover) {
-    background-color: black;
-    font-size: 1em;
-    transition: font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+.nav-item-a:not(:hover) {
+    color: whitesmoke;
+    transition: color 0.8s ease-in-out;
+}
+
+.nav-item-a:hover {
+    transition: color 0.2s ease-in-out;
+    color: blueviolet;
 }
 
 
@@ -115,6 +146,26 @@ section {
     width: 40%;
     padding: 2em;
     padding-top: 6em;
+}
+
+.intro-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-btn {
+    border: 1px solid rgb(19, 4, 34);
+    border-radius: 0.25rem;
+    color: aliceblue;
+    background-color: rgb(19, 4, 34);
+    margin-top: 1em;
+}
+
+.intro-btn:hover {
+    color: rgb(202, 210, 218);
+    background-color: rgb(13, 2, 24);
 }
 
 .intro-statement {
@@ -194,7 +245,7 @@ section {
     min-height: 10em;
     width: 12em;
     margin: 1em;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 0.7em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
 }
@@ -259,6 +310,7 @@ section {
     width: 100%;
     height: 15%;
     margin-bottom: 2em;
+    margin-top: 2em;
     font-size: 1.2em;
     text-align: center;
     display: flex;
@@ -269,14 +321,13 @@ section {
 .ai-btn a {
     background-color: rgb(15, 1, 30);
     padding: 0.4em;
-    font-weight: bold;
     font-size: 1em;
     border-radius: 0.3em;
-    transition: font-size 0.7s ease;
+    transition: box-shadow 0.4s ease;
 }
 
 .ai-btn a:hover {
-    font-size: 0.9em;
+    box-shadow: 0 1.3px 1.8px blueviolet;
 }
 
 /* Services Section */
@@ -297,6 +348,21 @@ section {
 .services-text-paragraphs {
     overflow: scroll;
     max-height: 20em;
+}
+
+.services-text-paragraphs {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    max-height: 20em;
+}
+
+.services-text-paragraphs::-webkit-scrollbar {
+    width: 0;
+}
+
+.services-text-paragraphs::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 .service-cards {
@@ -340,21 +406,33 @@ section {
 
 .service-card-text a {
     background-color: #3c0a4066;
-    display: flex;
-    text-align: center;
-    padding: 0.8em;
     border-radius: 0.4em;
-    transition: font-size 0.3s ease-in-out;
     text-decoration: underline;
     color: blueviolet;
 }
 
 .service-card-text a:hover {
-    font-size: 0.9em;
+    background-color: #28093a;
+    color: rgb(76, 10, 138);
 }
 
-.service-card-text a:not(:hover) {
-    font-size: 1em;
+#services-text-title, #services-text-paragraph {
+    transition: opacity 0.4s ease-in-out;
+}
+
+.animate {
+    animation: slideInLeft 0.6s ease-in-out forwards;
+}
+
+#services-text-paragraph {
+    border-radius: 2em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+.services-text-outter {
+    border-top: outset 1.5px blue;
+    border-radius: 2em;
 }
 
 .metrics-container {
@@ -365,6 +443,8 @@ section {
     align-items: center;
     justify-content: center;
     padding: 1em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .metric-card {
@@ -417,43 +497,57 @@ footer {
 .contact-form {
     border: inset 1px aliceblue;
     border-radius: 10px;
-    padding: 2em;
     height: fit-content;
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
+    max-width: 35em;
+    gap: 1em;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    width: 80%;
+    padding: 1em;
 }
 
 .form-group  {
-    width: calc(50% - 1em);
-    margin: 1.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    width: fit-content;
+    margin: 1em;
     text-align: left;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 label {
     color: #565459;
 }
 
-input {
+.form-group input {
     margin-top: 0.4em;
     background-color: transparent;
     border-radius: 5px;
     border: solid 1px aliceblue;
     padding: 0.5em;
+    width: 15em;
 }
 
 .form-end {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
 }
 
 .more-info {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: left;
+}
+
+.more-info label {
+    width: 100%;
+    display: flex;
     align-items: left;
 }
 
@@ -464,24 +558,20 @@ input {
 }
 
 .submit-container {
+    width: 100%;
     text-align: right;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .submit-container button {
     border: solid 1px blue;
-    cursor: pointer;
     background-color: #2f0d41;
     border-radius: 5px;
-    padding: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    transition: background-color 0.3s ease, font-size 0.3s ease;
 }
 
 .submit-container button:hover {
-    background-color: #2a0b3c;
-    font-size: 0.8em;
+    background-color: #230634;
+    color: #85828b;
 }
 
 
@@ -497,6 +587,20 @@ input {
     background-color: black;
     box-sizing: border-box;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links-container {
+    margin-bottom: 2em;
+    width: fit-content;
+    text-align: right;
+}
+
+.social-links-container a {
+    font-size: 1.5em;
 }
 
 @keyframes glow {
@@ -531,6 +635,17 @@ input {
     }
 }
 
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%);
+        opacity: 1;
+    }
+}
 
 
 @keyframes marquee {
@@ -604,7 +719,7 @@ input {
 
     .intro-text div h1 {
         padding-right: 1em;
-        padding-left: 1.5em;
+        padding-left: 0.5em;
     }
 
     .intro-animation {
@@ -655,6 +770,10 @@ input {
     .service-cards {
         height: 25em;
         overflow: scroll;
+    }
+
+    .services-container {
+        height: 30em;
     }
 
     .service-card {

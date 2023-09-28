@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
-    <title>Supersede</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Suprsede</title>
 </head>
 
 <body>
@@ -13,23 +14,23 @@
         <nav>
             <div class="navbar-nav">
                 <div class="logo-container">
-                    <a href="#" id="logo-text">Supersede</a>
+                    <a href="./index.html" id="logo-text">Suprsede</a>
                 </div>
 
                 <div>
-                    <button id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
 
                     <div id="navbar-menu">
                         <ul>
-                            <li class="nav-item"><a href="#">Benefits</a> <span>|&nbsp;</span></li>
-                            <li class="nav-item"><a href="#">Services</a> <span>|&nbsp;</span></li>
-                            <li class="nav-item"><a href="#">Case Studies and Testimonials</a> <span>|&nbsp;</span></li>
-                            <li class="nav-item"><a href="#">Blog</a></li>
-                            <li id="book-call-btn-li"><a href="#" type="button" id="book-call-btn">Book a Call</a></li>
+                            <li class="nav-item"><a href="#" class="nav-item-a">Benefits</a></li>
+                            <li class="nav-item"><a href="#services" class="nav-item-a">Services</a></li>
+                            <li class="nav-item"><a href="#" class="nav-item-a">Case Studies and Testimonials</a></li>
+                            <li class="nav-item"><a href="#" class="nav-item-a">Blog</a></li>
+                            <li id="book-call-btn-li">
+                                <a href="#" type="button" id="book-call-btn">Book a Call</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -46,6 +47,10 @@
                 </div>
                 <div class="intro-statement">
                     <h1>KICK START YOUR AI JOURNEY</h1>
+                    <div class="intro-btns">
+                        <a href="#" type="button" class="intro-btn my-btn">Book Consultation</a>
+                        <a href="#" type="button" class="intro-btn my-btn">Book Something...</a>
+                    </div>
                 </div>
             </div>
             <div class="intro-animation">
@@ -114,70 +119,60 @@
                 </div>
             </div>
             <div class="ai-btn">
-                <a href="#" type="btn">Learn More</a>
+                <a href="#" type="button" class="my-btn">Learn More</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section>
+    <section id="services">
         <div class="services-container">
             <div class="service-cards">
-                <div class="service-card">
+                <div class="service-card" id="ai_development">
                     <div class="service-card-pic">
                         <img src="./static/images/service-card-1.png" alt="Icon">
-                        <span>Lorem ipsum</span>
+                        <span>Ai Development</span>
                     </div>
                     <div class="service-card-text">
-                        <a href="#" type="button">Browse More</a>
+                        <a type="button" class="service-card-btn my-btn">Browse More</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="agents_va">
                     <div class="service-card-pic">
                         <img src="./static/images/service-card-1.png" alt="Icon">
-                        <span>Lorem ipsum</span>
+                        <span>Agents and Virtual Assistants</span>
                     </div>
                     <div class="service-card-text">
-                        <a href="#" type="button">Browse More</a>
+                        <a type="button" class="service-card-btn my-btn">Browse More</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="ai_automation">
                     <div class="service-card-pic">
                         <img src="./static/images/service-card-1.png" alt="Icon">
-                        <span>Lorem ipsum</span>
+                        <span>A.I Automation</span>
                     </div>
                     <div class="service-card-text">
-                        <a href="#" type="button">Browse More</a>
+                        <a type="button" class="service-card-btn my-btn">Browse More</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="ai_marketing">
                     <div class="service-card-pic">
                         <img src="./static/images/service-card-1.png" alt="Icon">
-                        <span>Lorem ipsum</span>
+                        <span>A.I Marketing</span>
                     </div>
                     <div class="service-card-text">
-                        <a href="#" type="button">Browse More</a>
+                        <a type="button" class="service-card-btn my-btn">Browse More</a>
                     </div>
                 </div>
             </div>
             <div class="services-text">
-                <div class="services-text-title">
+                <div class="services-text-title animate" id="services-text-title">
                     <h2>Service Title Here</h2>
                 </div>
-                <div class="services-text-paragraphs">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, dolore? Corporis reprehenderit
-                        labore voluptas dolorum esse incidunt aperiam! Deleniti, aut.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, optio.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, suscipit. A, ipsum omnis saepe
-                        praesentium similique iste fuga incidunt voluptatum tempore quas expedita quod ipsa magnam optio
-                        sunt nisi cum explicabo dolor error consequatur tenetur voluptate modi commodi accusamus. Animi
-                        repudiandae exercitationem temporibus veritatis quidem.
-                    </p>
+                <div class="services-text-outter">
+                    <div class="services-text-paragraphs" id="services-text-paragraph">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,36 +237,44 @@
 
         <form class="contact-form">
             <div class="form-group">
-                <label for="fistname">Please Let's know your name</label> <br>
-                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                <label for="firstname">Please Let's know your name</label> <br>
+                <input type="text" name="first" id="firstname" placeholder="First Name">
             </div>
             <div class="form-group">
                 <label for="lastname">Please Let's know your name</label> <br>
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                <input type="text" name="last" id="lastname" placeholder="Last Name">
             </div>
             <div class="form-group">
                 <label for="email">Please enter your email</label> <br>
-                <input type="email" name="email" id="email" placeholder="...@...">
+                <input type="email" name="mail" id="email" placeholder="...@..." autocomplete="email">
             </div>
             <div class="form-group">
                 <label for="budget">Please enter your budget</label> <br>
-                <input type="number" name="budget" id="budget" placeholder="budget">
+                <input type="number" name="project_budget" id="budget" placeholder="budget">
             </div>
             <div class="form-end">
                 <div class="more-info">
-                    <label for="more_info">Please tell us more about your projects (optional)</label> <br>
-                    <textarea name="more_info" id="more_info-text" cols="35" rows="7"></textarea> <br>
+                    <label for="more_info-text">Please tell us more about your projects (optional)</label> <br>
+                    <textarea name="more_info" id="more_info-text" cols="35" rows="7" placeholder="Tell us more ..."></textarea> <br>
                 </div>
                 <div class="submit-container">
-                    <button type="submit">Send</button>
+                    <button type="submit" class="my-btn">Send</button>
                 </div>
             </div>
         </form>
         <div class="copyright">
-            &copy; Supersede 2023. All rights Reserved
+            <div class="social-links-container">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+
+            &copy; Suprsede 2023. All rights Reserved
         </div>
     </footer>
+
+    <script src="./static/js/script.js"></script>
 </body>
-<script src="./static/js/script.js"></script>
 
 </html>
