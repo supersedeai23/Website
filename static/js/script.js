@@ -55,6 +55,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+// // Back to Top button
+const backButton = document.getElementById('back-to-top-button');
+
+window.addEventListener('scroll', function () {
+
+    if (document.documentElement.scrollTop > 100) {
+        backButton.style.display = 'block';
+    } else {
+        backButton.style.display = 'none';
+    }
+});
+
+backButton.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 const servicesInfo = {
   ai_development: [
