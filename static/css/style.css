@@ -3,7 +3,6 @@
 }
 
 /* Flights decorations */
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     padding: 0;
@@ -879,6 +878,7 @@ label {
 
     #navbar-toggler {
         display: block;
+        padding-right: 1.5em;
         animation: padding 0.3s ease-in-out;
     }
 
@@ -968,12 +968,17 @@ label {
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        width: 22em;
     }
 
     .form-group {
         margin: 0.5em;
         width: 100%;
         text-align: center;
+    }
+
+    .form-end {
+        width: 20em;
     }
 
 }
