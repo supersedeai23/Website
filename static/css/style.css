@@ -1,72 +1,13 @@
 * {
     color: white;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 /* Flights decorations */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-
-code,
-kbd,
-pre,
-samp {
-    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-    font-size: 1em;
-}
-
-small {
-    font-size: 80%;
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: initial;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-b,
-strong,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-weight: 400;
-}
-
-em {
-    font-style: normal;
-}
-
 /* Flights decorations End */
 
 html {
@@ -929,8 +870,6 @@ label {
         margin: 2em;
         width: 15em;
     }
-
-
 }
 
 
