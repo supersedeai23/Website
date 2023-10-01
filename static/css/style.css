@@ -43,7 +43,8 @@ a {
 
 /* NavBar */
 nav {
-    background-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
     height: 75px;
     position: fixed;
     z-index: 999;
