@@ -1,6 +1,11 @@
+
 * {
-    color: white;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    color: aliceblue;
+    /* font-family: 'Montserrat', sans-serif, 'Segoe UI'; */
+    font-family: 'Mooli', sans-serif, 'Segoe UI';
+    line-height: 2rem;
+    font-weight: 500;
+    
 }
 
 /* Flights decorations */
@@ -110,7 +115,7 @@ nav {
 
 
 .nav-item-a:not(:hover) {
-    color: whitesmoke;
+    color: rgb(147, 155, 161);;
     transition: color 0.8s ease-in-out;
 }
 
@@ -284,7 +289,7 @@ section {
     justify-content: center;
     text-align: center;
     font-size: 0.8em;
-    color: #a09494;
+    color: rgb(147, 155, 161);;
 }
 
 .ai-title {
@@ -505,6 +510,7 @@ section {
 .metric-card-text {
     font-size: 0.8em;
     padding: 0.2em;
+    color: rgb(147, 155, 161);
 }
 
 #metrics-title {
