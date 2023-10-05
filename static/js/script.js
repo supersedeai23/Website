@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
     navbarMenu.classList.toggle("active");
   });
 
+  function toggleVideoSize(video) {
+    if (video.classList.contains('enlarged')) {
+      video.classList.remove('enlarged');
+      video.muted = true;
+      video.controls = false;
+    } else {
+      video.classList.add('enlarged');
+      video.muted = false;
+      video.controls = true;
+    }
+  }
+
+  const bgVideo = document.getElementById('background-video');
+  bgVideo.addEventListener('click', () => {
+    toggleVideoSize(bgVideo);
+  });
+
   // Display default text for services section
   document.getElementById('services-text-title').innerHTML = '<h2>AI Development</h2>';
   document.getElementById('services-text-title').classList.add('animate');
@@ -18,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Make Services dynamic
-  document.querySelectorAll(".service-card-btn").forEach(element => {
+  document.querySelectorAll(".service-card").forEach(element => {
     element.addEventListener('click', () => {
       const serviceCard = element.closest('.service-card');
       const serviceId = serviceCard.getAttribute('id');
@@ -31,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       newServiceTitleTag.style.opacity = 0;
       newServiceTextAreaTag.style.opacity = 0;
       newServiceTitleTag.classList.remove('animate');
-      
+
       setTimeout(() => {
         newServiceTitleTag.innerHTML = '<h2>' + serviceSpan.innerHTML + '</h2>';
         newServiceTitleTag.style.opacity = 1;
@@ -60,18 +77,18 @@ const backButton = document.getElementById('back-to-top-button');
 
 window.addEventListener('scroll', function () {
 
-    if (document.documentElement.scrollTop > 100) {
-        backButton.style.display = 'block';
-    } else {
-        backButton.style.display = 'none';
-    }
+  if (document.documentElement.scrollTop > 100) {
+    backButton.style.display = 'block';
+  } else {
+    backButton.style.display = 'none';
+  }
 });
 
 backButton.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 const servicesInfo = {

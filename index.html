@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/suprcede.png">
     <title>Suprsede</title>
+
 </head>
 
 <body>
@@ -17,7 +19,8 @@
         <nav>
             <div class="navbar-nav">
                 <div class="logo-container">
-                    <a href="./index.html" id="logo-text">Suprsede</a>
+                    <a href="./index.html" id="logo-text"><img src="./static/images/suprcede.png" width="130px"
+                            alt="Suprcede"></a>
                 </div>
 
                 <div>
@@ -27,10 +30,9 @@
 
                     <div id="navbar-menu">
                         <ul>
-                            <li class="nav-item"><a href="#" class="nav-item-a">Benefits</a></li>
+                            <li class="nav-item"><a href="#metrics" class="nav-item-a">Benefits</a></li>
                             <li class="nav-item"><a href="#services" class="nav-item-a">Services</a></li>
-                            <li class="nav-item"><a href="#" class="nav-item-a">Case Studies and Testimonials</a></li>
-                            <li class="nav-item"><a href="#" class="nav-item-a">Blog</a></li>
+                            <li class="nav-item"><a href="#footer" class="nav-item-a">Contact Us</a></li>
                             <li id="book-call-btn-li">
                                 <a href="#" type="button" id="book-call-btn">Book a Call</a>
                             </li>
@@ -46,10 +48,9 @@
         <div id="hero-container">
             <div class="intro-text">
                 <div class="intro-title">
-                    <h2 id=""><span style="color: aqua;">the</span>FUTURE</h2>
+                    <h2 id="">Future Proof Your Business with <span style="color: aqua;">AI Integration</span></h2>
                 </div>
                 <div class="intro-statement">
-                    <h1>Kick start you AI Journey</h1>
                     <div class="intro-btns">
                         <a href="#" type="button" class="intro-btn my-btn">Book Consultation</a>
                         <a href="#" type="button" class="intro-btn my-btn">Book Something...</a>
@@ -57,8 +58,8 @@
                 </div>
             </div>
             <div class="intro-animation">
-                <video autoplay muted loop id="background-video">
-                    <source src="static/videos/video1.webm" type="video/mp4">
+                <video autoplay muted loop id="background-video" onclick="toggleVideoSize(this)">
+                    <source src="static/videos/video1.webm" type="video/webm"> 
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -67,13 +68,15 @@
 
     <!-- Partners Section -->
     <section class="partners-section">
+        <div class="partners-title">
+            <h2>Our Partners</h2>
+        </div>
         <div class="partners-container">
             <div class="partners-marquee">
-                <div class="partner-container">Partner 1</div>
-                <div class="partner-container">Partner 2</div>
-                <div class="partner-container">Partner 3</div>
-                <div class="partner-container">Partner 4</div>
-                <div class="partner-container">Partner 5</div>
+                <div class="partner-container"><img src="./static/images/OpenAI_Logo.png" alt="Open AI"></div>
+                <div class="partner-container"><img src="./static/images/google_bard.png" alt="Google Bard"></div>
+                <div class="partner-container"><img src="./static/images/LLM" alt="LLM"></div>
+                <div class="partner-container"><img src="./static/images/hugging_face.png" alt="Hugging Face"></div>
             </div>
         </div>
     </section>
@@ -137,7 +140,7 @@
             <div class="service-cards">
                 <div class="service-card" id="ai_development">
                     <div class="service-card-pic">
-                        <i class="fa fa-poo-storm fa-fade service-icon"></i>
+                        <i class="fa fa-poo-storm my-fade service-icon"></i>
                         <span>A.I Development</span>
                     </div>
                     <div class="service-card-text">
@@ -146,7 +149,7 @@
                 </div>
                 <div class="service-card" id="agents_va">
                     <div class="service-card-pic">
-                        <i class="fa-solid fa-microchip fa-bounce service-icon"></i>
+                        <i class="fa-solid fa-microchip my-shake service-icon"></i>
                         <span>Agents and Virtual Assistants</span>
                     </div>
                     <div class="service-card-text">
@@ -155,7 +158,7 @@
                 </div>
                 <div class="service-card" id="ai_automation">
                     <div class="service-card-pic">
-                        <i class="fa-brands fa-squarespace fa-shake service-icon"></i>
+                        <i class="fa-brands fa-squarespace my-shake service-icon"></i>
                         <span>A.I Automation</span>
                     </div>
                     <div class="service-card-text">
@@ -164,7 +167,7 @@
                 </div>
                 <div class="service-card" id="ai_marketing">
                     <div class="service-card-pic">
-                        <i class="fa-solid fa-arrows-spin fa-spin service-icon"></i>
+                        <i class="fa-solid fa-arrows-spin my-spin service-icon"></i>
                         <span>A.I Marketing</span>
                     </div>
                     <div class="service-card-text">
@@ -186,7 +189,7 @@
     </section>
 
     <!-- Metrics Section -->
-    <section>
+    <section id="metrics">
         <div class="metrics-container">
             <h2 id="metrics-title">The METRICS are Fundamental</h2>
             <div class="metric-card">
@@ -236,10 +239,13 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="final-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus ab ut repudiandae suscipit
-                qui tenetur nulla, eaque aspernatur architecto.</p>
+            <h1>Ready to Transform your Business?</h1>
+            <div>
+                <span>Embark on a transformative AI journey tailored towards your needs.</span>
+                <span>Reach out now let's craft the future together</span>
+            </div>
         </div>
 
         <form class="contact-form">
@@ -261,8 +267,9 @@
             </div>
             <div class="form-end">
                 <div class="more-info">
-                    <label for="more_info-text">Please tell us more about your projects (optional)</label> <br>
-                    <textarea name="more_info" id="more_info-text" cols="35" rows="7" placeholder="Tell us more ..."></textarea> <br>
+                    <label for="more_info-text">Please tell us more about your project (optional)</label> <br>
+                    <textarea name="more_info" id="more_info-text" cols="35" rows="7"
+                        placeholder="Tell us more ..."></textarea> <br>
                 </div>
                 <div class="submit-container">
                     <button type="submit" class="my-btn">Send</button>
@@ -276,6 +283,8 @@
                 <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                 <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
             </div>
 
             &copy; Suprsede 2023. All rights Reserved
