@@ -931,10 +931,11 @@ label {
         text-align: center;
         justify-content: center;
         margin: 0;
+        padding-left: 1px;
     }
 
     .partners-marquee {
-        animation: marquee 10s linear infinite;
+        animation: marquee 7s linear infinite;
     }
     
     .partner-container {
